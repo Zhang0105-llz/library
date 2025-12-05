@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Library</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Book Library</h1>
+    
+    <!-- Search Input -->
+    <input type="text" id="searchInput" placeholder="Search by title or author..." />
+
+    <!-- Sort Dropdown -->
+    <select id="sortSelect">
+      <option value="title-asc">Sort by Title (A-Z)</option>
+      <option value="title-desc">Sort by Title (Z-A)</option>
+      <option value="year-asc">Sort by Year (Oldest)</option>
+      <option value="year-desc">Sort by Year (Newest)</option>
+    </select>
+
+    <!-- Year Filter Input -->
+    <label for="yearFilter">Filter by Year (min): </label>
+    <input type="number" id="yearFilter" placeholder="e.g. 2010" min="1900" />
+  </header>
+
+  <main>
+    <!-- Book list container -->
+    <div id="bookList"></div>
+
+    <!-- Pagination controls -->
+    <div id="pagination"></div>
+  </main>
+
+  <footer>
+    <a href="mailto:info@example.com">Email Us</a> |
+    <a href="about.html">About</a>
+  </footer>
+</body>
+</html>
